@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>London House Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form" id="priceForm">
+    <h2>Area (square meters)</h2>
+    <input class="area" type="text" id="uiSqm" class="floatLabel" name="Squarem" value="50">
+    <h2>Bedrooms</h2>
+    <div class="switch-field">
+        <input type="radio" id="radio-bed-1" name="uiBED" value="1"/>
+        <label for="radio-bed-1">1</label>
+        <input type="radio" id="radio-bed-2" name="uiBED" value="2" checked/>
+        <label for="radio-bed-2">2</label>
+        <input type="radio" id="radio-bed-3" name="uiBED" value="3"/>
+        <label for="radio-bed-3">3</label>
+        <input type="radio" id="radio-bed-4" name="uiBED" value="4"/>
+        <label for="radio-bed-4">4</label>
+        <input type="radio" id="radio-bed-5" name="uiBED" value="5"/>
+        <label for="radio-bed-5">5</label>
+    </div>
+    <h2>Living Rooms</h2>
+    <div class="switch-field">
+        <input type="radio" id="radio-liv-1" name="uiLIV" value="1"/>
+        <label for="radio-liv-1">1</label>
+        <input type="radio" id="radio-liv-2" name="uiLIV" value="2" checked/>
+        <label for="radio-liv-2">2</label>
+        <input type="radio" id="radio-liv-3" name="uiLIV" value="3"/>
+        <label for="radio-liv-3">3</label>
+        <input type="radio" id="radio-liv-4" name="uiLIV" value="4"/>
+        <label for="radio-liv-4">4</label>
+        <input type="radio" id="radio-liv-5" name="uiLIV" value="5"/>
+        <label for="radio-liv-5">5</label>
+    </div>
+    <h2>Bath</h2>
+    <div class="switch-field">
+        <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
+        <label for="radio-bath-1">1</label>
+        <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
+        <label for="radio-bath-2">2</label>
+        <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>
+        <label for="radio-bath-3">3</label>
+        <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4"/>
+        <label for="radio-bath-4">4</label>
+        <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
+        <label for="radio-bath-5">5</label>
+    </div>
+    <h2>Location</h2>
+    <div>
+        <select class="location" name="location" id="uiLocations">
+            <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+        </select>
+    </div>
+    <button class="submit" type="button" onclick="onClickedGetPrice()">Estimate Price</button>
+    <div id="uiEstimatedPrice" class="result"><h2></h2></div>
+</form>
+
+<!-- Place script at the end for better performance -->
+<script src="app.js"></script>
+</body>
+</html>
