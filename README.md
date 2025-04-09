@@ -15,3 +15,5 @@ Nginx was used as it is a simple server.
 Deployed to cloud (AWS EC2)
 
 ec2-16-171-226-160.eu-north-1.compute.amazonaws.com
+
+![image](https://github.com/user-attachments/assets/4693d8d3-32c7-488c-9db7-01ee3d20134f)
